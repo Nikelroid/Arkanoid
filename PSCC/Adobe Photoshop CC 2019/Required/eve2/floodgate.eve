@@ -1,0 +1,145 @@
+layout FloodgateDebug
+    {
+    view TFloodgateDialog(name               : '$$$/private/FloodgateDialog/Title=Floodgate Debug',
+                          placement          : place_column,
+                          margin             : 15,
+                          isResizable        : true,
+                          dboxProcIdentifier : -1)
+        {
+        row(horizontal : align_fill,
+                     vertical   : align_fill)
+            {
+            column(horizontal : align_fill,
+                     vertical   : align_fill)
+                {
+                TCluster(name       : '$$$/private/FloodgateDialog/Status/ClusterTitle=Floodgate API Status',
+                         spacing    : gSmallGap,
+                         horizontal : align_fill,
+                         vertical   : align_top)
+                    {
+                    row(spacing: gSmallGap, horizontal : align_fill)
+                        {
+                        TStaticText(name    : "$$$/private/FloodgateDialog/ServerLabel=Server: ",
+                                    isLabel : true);
+
+                        TStaticText(name       : "$$$/private/FloodgateDialog/ServerMode/Unknown=unknown",
+                                    identifier : @serverMode,
+                                    horizontal : align_fill);
+                        }
+
+                    row(spacing: gSmallGap, horizontal : align_fill)
+                        {
+                        TStaticText(name    : "$$$/private/FloodgateDialog/AvailableLabel=Available: ",
+                                    isLabel : true);
+
+                        TStaticText(name       : "$$$/private/FloodgateDialog/Available/Unknown=unknown",
+                                    identifier : @authStatus,
+                                    horizontal : align_fill);
+                        }
+                    }
+
+                TCluster(name      : '$$$/private/FloodgateDialog/Features/ClusterTitle=Features',
+                         placement : place_column)
+                    {
+                    row(spacing: gSmallGap, horizontal: align_fill, vertical: align_fill)
+                        {
+                        TStaticText(name    : "$$$/private/FloodgateDialog/Features/FloodgateLabel=Floodgate: ",
+                                    isLabel : true);
+
+                        TEditText(identifier : @featuresRaw,
+                                  horizontal : align_fill,
+                                  characters : 20,
+                                  lines      : 4,
+                                  vertical   : align_fill);
+                        }
+
+                    TButton(name         : "$$$/private/FloodgateDialog/Features/Refresh=Refresh",
+                            identifier   : @featuresRefresh,
+                            horizontal   : align_right,
+                            dialogButton : false);
+                    }
+
+                TCluster(name      : '$$$/private/FloodgateDialog/LocalCache/ClusterTitle=Local Cache',
+                         placement : place_column)
+                    {
+                    row(spacing: gSmallGap, horizontal: align_fill, vertical: align_fill)
+                        {
+                        TStaticText(name    : "$$$/private/FloodgateDialog/LocalCache/RawLabel=Raw: ",
+                                    isLabel : true);
+
+                        TEditText(identifier : @localCacheRaw,
+                                  horizontal : align_fill,
+                                  characters : 20,
+                                  lines      : 4,
+                                  vertical   : align_fill);
+                        }
+
+                    TButton(name         : "$$$/private/FloodgateDialog/LocalCache/Refresh=Refresh",
+                            identifier   : @localCacheRefresh,
+                            horizontal   : align_right,
+                            dialogButton : false);
+                    }
+
+                TCluster(name      : '$$$/private/FloodgateDialog/Test=Test',
+                         placement : place_column,
+                         vertical  : align_top)
+                    {
+                    row(spacing: gSmallGap, horizontal : align_fill)
+                        {
+                        TStaticText(name    : "$$$/private/FloodgateDialog/Test/NameLabel=Feature Name:",
+                                    isLabel : true);
+
+                        TEditText(identifier : @testName,
+                                  horizontal : align_fill,
+                                  characters : 20);
+
+                        TButton(name         : "$$$/private/FloodgateDialog/Test/Button=Test",
+                                identifier   : @testButton,
+                                dialogButton : false);
+                        }
+
+                    row(spacing: gSmallGap, horizontal : align_fill)
+                        {
+                        TStaticText(name    : "$$$/private/FloodgateDialog/Test/ResultLabel=Result: ",
+                                    isLabel : true);
+
+                        TStaticText(name       : "$$$/private/FloodgateDialog/Test/Result=<unknown>",
+                                    horizontal : align_fill,
+                                    identifier : @testResult);
+                        }
+
+                    row(spacing: gSmallGap, horizontal : align_fill)
+                        {
+                        TStaticText(name    : "$$$/private/FloodgateDialog/Test/Manual=Manual:",
+                                    isLabel : true);
+
+                        TButton(name         : "$$$/private/FloodgateDialog/Test/ManualSet=Set",
+                                identifier   : @manualSet,
+                                dialogButton : false);
+
+                        TButton(name         : "$$$/private/FloodgateDialog/Test/ManualClear=Clear",
+                                identifier   : @manualClear,
+                                dialogButton : false);
+                        }
+                    }
+                }
+
+            TCluster(name       : '$$$/private/FloodgateDialog/FeatureManager=Feature Manager Dump',
+                     placement  : place_column,
+                     horizontal : align_fill,
+                     vertical   : align_fill)
+                {
+                TEditText(identifier : @featureManagerDump,
+                          horizontal : align_fill,
+                          vertical   : align_fill,
+                          characters : 40);
+                }
+            }
+
+        TButton(name        : "$$$/private/FloodgateDialog/Close=Close",
+                identifier  : @ok,
+                dismiss     : true,
+                default     : true,
+                horizontal  : align_right);
+        }
+    }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" 
+  manifestVersion="1.0">
+
+<assemblyIdentity
+   type="win32"
+   name="comdll.X"
+   version="11.0.0.22122" />
+
+<file name="AdobeHunspellPlugin.dll">
+
+<comClass
+    clsid="{D16C3D1C-4CFF-4266-8661-A3481C969639}"
+    threadingModel = "Apartment" />
+</file>
+
+</assembly>
+

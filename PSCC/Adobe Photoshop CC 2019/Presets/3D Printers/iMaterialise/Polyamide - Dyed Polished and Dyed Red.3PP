@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Printer>
+  <Version value="1" />
+  <PrintLocation value="i.materialise.com" />
+  <PrintVolume X="200.00" Y="150.00" Z="150.00" />
+  <MeshRepairResolution value="8" />
+  <PrinterHeads value="1" />
+  <PrinterSupportsUSB flag="0" />
+  <PreferredFileFormat value="stl" />
+  <NeedsZip flag="1" />
+  <FullColor flag="0" />
+  <UploadURL value="http://i.materialise.com/3dprintlab/f7489586-8a19-461b-993a-ff60850f4f49/035f4772-da8a-400b-8be4-2dd344b28ddb/83d0e80e-0f65-42b7-a50f-2719a4c7701b" />
+  <PrinterResolution X="2" Y="2" Z="10" />
+  <Quality value="high">
+    <MeshRepairResolution value="9" />
+   </Quality>
+  <Quality value="medium">
+    <MeshRepairResolution value="8" />
+  </Quality>
+  <Quality value="low">
+    <MeshRepairResolution value="7" />
+  </Quality>
+</Printer>
+<Materials>
+  <Material name="Polyamide Polished and Dyed Red">
+    <NeedsRaft flag="0" />
+    <NeedsSupports flag="0" />
+    <NeedsEscapeHoles flag="0" />
+    <MinimumWallThickness value="0.8" />
+    <PricePerCubicCM value="1.39" />
+    <Handling value="7" />
+    <Diffuse R='0.7499' G='0.1500' B='0.1501' />
+    <Specular R='0.7500' G='0.6750' B='0.6750' />
+    <Illumination R='0' G='0' B='0' />
+    <Ambient R='0.0400' G='0.0400' B='0.0400' />
+    <Shine value='0.26' />
+    <Reflection value='0.04' />
+    <Roughness value="0" />
+    <Bump value="0" />
+    <Opacity value="1" />
+    <Refraction value="1" />
+  </Material>
+</Materials>

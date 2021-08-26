@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Printer>
+  <Version value="1" />
+  <PrintLocation value="i.materialise.com" />
+  <PrintVolume X="88.00" Y="63.00" Z="125.00" />
+  <MeshRepairResolution value="8" />
+  <PrinterHeads value="1" />
+  <PrinterSupportsUSB flag="0" />
+  <PreferredFileFormat value="stl" />
+  <NeedsZip flag="1" />
+  <FullColor flag="0" />
+  <UploadURL value="http://i.materialise.com/3dprintlab/03d3b119-7e58-415f-b167-f20d9cbe16bd/8f7cc303-69fe-4634-b0af-8f7f9613a4c1/7b930801-5586-4cf1-9f70-63aa37b1ca7d" />
+  <PrinterResolution X="3.33" Y="3.33" Z="3.33" />
+  <Quality value="high">
+    <MeshRepairResolution value="9" />
+   </Quality>
+  <Quality value="medium">
+    <MeshRepairResolution value="8" />
+  </Quality>
+  <Quality value="low">
+    <MeshRepairResolution value="7" />
+  </Quality>
+</Printer>
+<Materials>
+  <Material name="Copper Polished Uncoated">
+    <NeedsRaft flag="0" />
+    <NeedsSupports flag="0" />
+    <NeedsEscapeHoles flag="0" />
+    <MinimumWallThickness value="0.50" />
+    <PricePerCubicCM value="20" />
+    <Handling value="8.9" />
+    <Diffuse R="1" G="0.7" B="0.5" />
+    <Specular R="0.1" G="0.1" B="0.1" />
+    <Illumination R="0" G="0" B="0" />
+    <Ambient R="0" G="0" B="0" />
+    <Shine value="0.9" />
+    <Reflection value="0.9" />
+    <Roughness value="0" />
+    <Bump value="0" />
+    <Opacity value="1" />
+    <Refraction value="1" />
+  </Material>
+</Materials>

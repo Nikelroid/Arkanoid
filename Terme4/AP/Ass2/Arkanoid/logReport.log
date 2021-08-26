@@ -1,0 +1,16 @@
+2021-07-05 09:01:39.249 [JavaFX Application Thread] INFO  EndGame - User selected New game
+2021-07-05 09:01:39.256 [JavaFX Application Thread] INFO  cleaning - Timers and animations reset
+2021-07-05 09:01:39.256 [JavaFX Application Thread] INFO  cleaning - Whole game cleaned up
+2021-07-05 09:01:39.266 [JavaFX Application Thread] INFO  setObjects - Paddle added
+2021-07-05 09:01:39.420 [JavaFX Application Thread] INFO  setObjects - Ball added
+2021-07-05 09:01:39.473 [JavaFX Application Thread] INFO  blocks - Playground made
+2021-07-05 09:01:41.335 [JavaFX Application Thread] INFO  Main - User pressed spade for start the game
+2021-07-05 09:01:42.121 [JavaFX Application Thread] INFO  difineLoops - Normal ball could not destroy a block
+2021-07-05 09:01:42.889 [JavaFX Application Thread] INFO  difineLoops - Ball Touched Paddle
+2021-07-05 09:01:43.209 [JavaFX Application Thread] INFO  difineLoops - Ball Touched borders
+2021-07-05 09:01:43.912 [JavaFX Application Thread] INFO  difineLoops - Normal ball could not destroy a block
+2021-07-05 09:01:44.920 [JavaFX Application Thread] INFO  difineLoops - Ball Touched Paddle
+2021-07-05 09:01:46.074 [JavaFX Application Thread] INFO  difineLoops - Ball Touched borders
+2021-07-05 09:01:46.089 [JavaFX Application Thread] INFO  difineLoops - Normal ball destroy a blinky block
+2021-07-05 09:01:47.257 [JavaFX Application Thread] INFO  difineLoops - Ball Touched Paddle
+2021-07-05 09:01:48.153 [JavaFX Application Thread] INFO  difineLoops - Normal ball destroyed a block
